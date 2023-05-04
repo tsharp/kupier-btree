@@ -63,22 +63,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf1de2fe8c75bc145a2f577add951f8134889b4795d47466a54a5c846d691693"
 
 [[package]]
-name = "btree-test"
-version = "0.1.0"
-dependencies = [
- "bincode",
- "bytes",
- "log",
- "log4rs",
- "num-format",
- "pretty_assertions",
- "rand",
- "serde",
- "serde_derive",
- "tokio",
-]
-
-[[package]]
 name = "bytes"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -189,6 +173,22 @@ name = "itoa"
 version = "0.4.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b71991ff56294aa922b450139ee08b3bfc70982c6b2c7562771375cf73542dd4"
+
+[[package]]
+name = "kupier-btree"
+version = "0.1.0"
+dependencies = [
+ "bincode",
+ "bytes",
+ "log",
+ "log4rs",
+ "num-format",
+ "pretty_assertions",
+ "rand",
+ "serde",
+ "serde_derive",
+ "tokio",
+]
 
 [[package]]
 name = "libc"
@@ -578,11 +578,10 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "1.14.0"
+version = "1.18.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70e992e41e0d2fb9f755b37446f20900f64446ef54874f40a60c78f021ac6144"
+checksum = "0e050c618355082ae5a89ec63bbf897225d5ffe84c7c4e036874e4d185a5044e"
 dependencies = [
- "autocfg",
  "pin-project-lite",
 ]
 
